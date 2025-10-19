@@ -29,7 +29,7 @@ permissions:
 jobs:
   # Zero-Knowledge Compliance Check
   zk-compliance:
-    runs-on: [self-hosted, Linux, X64]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -75,7 +75,7 @@ jobs:
 
   # Tenant Isolation Check
   tenant-isolation:
-    runs-on: [self-hosted, Linux, X64]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -115,7 +115,7 @@ jobs:
 
   # Security Scan
   security-scan:
-    runs-on: [self-hosted, Linux, X64]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -155,7 +155,7 @@ jobs:
 
   # Code Quality
   code-quality:
-    runs-on: [self-hosted, Linux, X64]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -198,7 +198,7 @@ jobs:
 
   # Test Coverage
   test-coverage:
-    runs-on: [self-hosted, Linux, X64]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -238,7 +238,7 @@ jobs:
 
   # Privacy Acceptance Tests
   privacy-tests:
-    runs-on: [self-hosted, Linux, X64]
+    runs-on: ubuntu-latest
     if: ${{ inputs.enable-playwright }}
     steps:
       - name: Checkout code
