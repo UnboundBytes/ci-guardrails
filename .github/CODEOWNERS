@@ -1,0 +1,10 @@
+# CODEOWNERS for UnboundBytes CI Guardrails
+# This file ensures all changes require approval from the repository owner
+
+# All files require approval
+* @unboundbytes-platform
+
+# Critical workflow files require explicit approval
+.github/workflows/** @unboundbytes-platform
+README.md @unboundbytes-platform
+CHANGES.md @unboundbytes-platform
